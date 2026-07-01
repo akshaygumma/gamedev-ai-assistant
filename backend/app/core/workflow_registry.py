@@ -5,7 +5,7 @@ class WorkflowManager:
     def __init__(self):
 
         self.workflows = {
-            "project_creation": ProjectCreationWorkflow
+            "project_creation": ProjectCreationWorkflow,
         }
 
     def get(self, workflow_name: str):

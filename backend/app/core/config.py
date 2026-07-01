@@ -11,5 +11,7 @@ class Settings:
     LLM_PROVIDER = os.getenv("LLM_PROVIDER", "groq")
     LLM_MODEL = os.getenv("LLM_MODEL", "llama-3.3-70b-versatile")
     LLM_API_KEY = os.getenv("LLM_API_KEY")
+    SUPABASE_URL = os.getenv("SUPABASE_URL","")
+    SUPABASE_KEY = os.getenv("SUPABASE_KEY","")
 
 settings = Settings()

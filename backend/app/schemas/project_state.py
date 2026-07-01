@@ -1,9 +1,9 @@
 from pydantic import BaseModel, Field
-
+from app.schemas.requirements.requirement_state import RequirementState
 
 class ProjectState(BaseModel):
 
-    requirements: dict = Field(default_factory=dict)
+    requirements: RequirementState = Field(default_factory=RequirementState)
 
     planning: dict = Field(default_factory=dict)
 
